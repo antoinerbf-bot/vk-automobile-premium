@@ -1,0 +1,54 @@
+{
+  "redirects": [
+    {
+      "source": "/stock",
+      "destination": "/stock.html",
+      "permanent": true
+    },
+    {
+      "source": "/vehicule",
+      "destination": "/vehicle.html",
+      "permanent": true
+    },
+    {
+      "source": "/reprise",
+      "destination": "/reprise.html",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/mentions-legales",
+      "destination": "/mentions-legales.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300"
+        }
+      ]
+    }
+  ]
+}
