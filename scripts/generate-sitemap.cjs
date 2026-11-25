@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-const host = (process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL || '').replace(/^https?:\\/\\//, '').replace(/\\/$/, '');
+const host = (process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL || '').replace(/^https?:[/][/]/, '').replace(/[/]$/, '');
 const robots = [
   'User-agent: *',
   'Allow: /',
@@ -22,12 +22,12 @@ if (host) {
       urls.push('<url><loc>' + loc + '</loc>' + alternates + '</url>');
     }
   }
-  const xml = '<?xml version="1.0" encoding="UTF-8"?>\\n' +
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\\n' +
-    urls.join('\\n') + '\\n</urlset>\\n';
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' +
+    urls.join('\n') + '\n</urlset>\n';
   fs.writeFileSync('sitemap.xml', xml, 'utf8');
   robots.push('Sitemap: ' + origin + '/sitemap.xml');
 } else {
   console.warn('No Vercel domain env found; sitemap.xml is not generated.');
 }
-fs.writeFileSync('robots.txt', robots.join('\\n') + '\\n', 'utf8');
+fs.writeFileSync('robots.txt', robots.join('\n') + '\n', 'utf8');
