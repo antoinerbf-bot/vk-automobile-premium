@@ -62,9 +62,10 @@ Les formulaires de contact et de reprise ouvrent un email prérempli vers `vkaut
 - Redirections vers les URL courtes (`/stock`, `/reprise`, `/services`, `/contact`).
 - Favicon, robots.txt, cache des ressources et images lazy-loaded dans les pages concernées.
 
-À compléter par le propriétaire avant mise en production :
-- Numéro BCE / TVA, forme juridique et identité exacte de l’exploitant.
-- Horaires d’ouverture vérifiés (non inventés ici).
+À vérifier par le propriétaire avant mise en production :
+- Les mentions légales affichent maintenant les informations publiques retrouvées pour VK AUTOMOBILE SRL : BCE/TVA BE 0666.942.997, siège à Dison et établissement à Lontzen. Vérifier ces éléments dans le Public Search BCE avant validation finale.
+- Les horaires affichés reprennent ceux publiés sur le site officiel actuel : lundi–vendredi 9h–18h, samedi 9h–17h, dimanche sur rendez-vous.
+- **Vérifier l’adresse email de réception** : ce projet utilise `vkautimomobile@hotmail.com` (adresse transmise dans le brief), tandis qu’un annuaire public affiche `vkautomobile@hotmail.com`. Confirmer l’adresse qui reçoit réellement les demandes.
 - Conditions réelles de garantie, financement et prestations.
 - Stock réel, prix, kilométrage, spécifications, disponibilité et photos autorisées.
 - Politique de confidentialité et mentions légales définitives, idéalement validées par un professionnel.
