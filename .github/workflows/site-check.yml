@@ -1,0 +1,25 @@
+name: Site quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build and smoke test
+        run: npm run build
+        env:
+          VERCEL_PROJECT_PRODUCTION_URL: vkautomobile.com
+      - name: Verify generated sitemap
+        run: |
+          node -e "const fs=require('fs'); const xml=fs.readFileSync('sitemap.xml','utf8'); for(const path of ['/blog?lang=fr','/blog/acheter-voiture-occasion?lang=fr','/blog/reprise-voiture-preparer?lang=nl','/blog/controle-voiture-occasion?lang=de']) if(!xml.includes(path)) throw new Error('Missing sitemap URL: '+path); if(!xml.includes('hreflang=\"x-default\"')) throw new Error('Missing x-default alternate'); console.log('Sitemap checks passed');"
