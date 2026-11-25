@@ -124,3 +124,12 @@ h1,h2,h3{letter-spacing:-.055em}
 .vehicle-photo-placeholder strong{display:block;color:#f4f1eb;font:600 20px Manrope;margin-bottom:8px}
 .vehicle-photo-placeholder span{font-size:12px}
 @media(max-width:680px){.trade-step{grid-template-columns:1fr}.trade-step .trade-field.full{grid-column:auto}.trade-step-kicker,.trade-step h3,.trade-step-actions,.trade-summary-note{grid-column:1}.atelier-reveal{transition-duration:.45s}}
+
+.vehicle-gallery-prev,.vehicle-gallery-next{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:rgba(8,9,11,.65);color:#fff;font-size:30px;line-height:1;backdrop-filter:blur(10px);cursor:pointer}
+.vehicle-gallery-prev{left:14px}.vehicle-gallery-next{right:14px}
+.vehicle-gallery-main.no-photo:after{content:"";position:absolute;inset:0;pointer-events:none;border:1px solid rgba(255,255,255,.05);border-radius:inherit}
+.vehicle-photo-placeholder{position:absolute;inset:0;display:grid;align-content:center;justify-items:center;gap:6px}
+.vehicle-photo-placeholder strong{letter-spacing:-.04em}
+.vehicle-gallery-main img[src=""]{display:none}
+.vehicle-gallery-count{font-variant-numeric:tabular-nums}
+@media(max-width:680px){.vehicle-gallery-prev,.vehicle-gallery-next{width:38px;height:38px;font-size:26px}}
