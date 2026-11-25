@@ -28,7 +28,7 @@ Site statique responsive pour VK Automobile, Rue Mitoyenne 356, 4710 Lontzen, Be
 4. Output Directory : `.`.
 5. Déployer.
 
-Le site est statique, sans build requis. Le domaine canonique et les URL hreflang sont générés à partir du domaine réellement utilisé, afin de ne pas figer un domaine Vercel non confirmé.
+Le site ne nécessite aucune compilation front-end. La commande npm de build sert uniquement à générer le sitemap et les règles robots à partir du domaine Vercel. Le domaine canonique et les URL hreflang sont générés à partir du domaine réellement utilisé, afin de ne pas figer un domaine Vercel non confirmé.
 
 ## Langues
 
@@ -36,7 +36,7 @@ Le site propose français, néerlandais et allemand via le sélecteur FR / NL / 
 
 ## Gestion du stock
 
-Le site ne publie que les entrées de `data/vehicles.json` ayant `published: true`, un identifiant, une marque et un modèle. Le fichier contient actuellement un modèle vide non publié : **aucun véhicule fictif n’est présenté comme une annonce réelle**.
+Le site ne publie que les entrées de `data/vehicles.json` ayant `published: true`, un identifiant, une marque et un modèle. Le fichier est actuellement un tableau vide : **aucun véhicule fictif n’est présenté comme une annonce réelle**.
 
 Pour modifier le stock :
 1. Ouvrir `admin-stock.html` dans le navigateur (après déploiement ou localement).
