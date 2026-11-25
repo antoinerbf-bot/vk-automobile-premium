@@ -62,7 +62,8 @@ if (!errors.length) {
 
   try {
     const config = JSON.parse(read('vercel.json'));
-    if (config.outputDirectory !== '.') errors.push('vercel.json outputDirectory must be "." for this static site.');\n    if (!Array.isArray(config.rewrites) || !config.rewrites.some(rule => rule.source === '/blog/:slug' && rule.destination === '/article.html?slug=:slug')) errors.push('Vercel blog article rewrite is missing.');
+    if (config.outputDirectory !== '.') errors.push('vercel.json outputDirectory must be "." for this static site.');
+    if (!Array.isArray(config.rewrites) || !config.rewrites.some(rule => rule.source === '/blog/:slug' && rule.destination === '/article.html?slug=:slug')) errors.push('Vercel blog article rewrite is missing.');
   } catch (error) { errors.push('Invalid vercel.json: ' + error.message); }
 
   const pages = {
@@ -72,7 +73,9 @@ if (!errors.length) {
     'reprise.html': 'trade',
     'services.html': 'services',
     'contact.html': 'contact',
-    'mentions-legales.html': 'legal',\n    'blog.html': 'blog',\n    'article.html': 'article'
+    'mentions-legales.html': 'legal',
+    'blog.html': 'blog',
+    'article.html': 'article'
   };
   for (const [file, page] of Object.entries(pages)) {
     const html = read(file);
