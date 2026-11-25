@@ -48,7 +48,7 @@ if (!errors.length) {
           for (const field of ['year', 'mileage', 'price']) {
             if (!Number.isFinite(Number(vehicle[field])) || Number(vehicle[field]) < 0) errors.push(label + ' is published but has an invalid ' + field + '.');
           }
-          if (!Array.isArray(vehicle.images) || vehicle.images.length === 0) errors.push(label + ' is published without real vehicle photos.');
+          if (!Array.isArray(vehicle.images)) errors.push(label + ' must have an images array (empty is allowed until original photos are supplied).');
           else vehicle.images.forEach((url, photoIndex) => {
             try {
               const parsed = new URL(url);
