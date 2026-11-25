@@ -16,8 +16,9 @@ Site statique responsive pour VK Automobile, Rue Mitoyenne 356, 4710 Lontzen, Be
 - `assets/app.js` — rendu des pages, FR/NL/DE, filtres, formulaires et données SEO
 - `data/vehicles.json` — source structurée du stock
 - `vercel.json` — redirections propres et cache des ressources
+- `scripts/smoke-test.cjs` — contrôle des pages, scripts, configuration et annonces publiées avant le build
 - `scripts/generate-sitemap.cjs` — sitemap multilingue et robots.txt générés au build
-- `package.json` — commande de build sans dépendance
+- `package.json` — `npm test` pour les contrôles et `npm run build` pour les contrôles + sitemap
 - `robots.txt` — règles d’indexation
 
 ## Déploiement Vercel
