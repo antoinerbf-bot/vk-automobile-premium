@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "build": "node scripts/generate-sitemap.cjs"
+    "build": "npm test && node scripts/generate-sitemap.cjs",
+    "test": "node scripts/smoke-test.cjs"
   }
 }
