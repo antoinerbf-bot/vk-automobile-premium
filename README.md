@@ -49,7 +49,7 @@ L’outil admin est volontairement local et non sécurisé : il n’a ni authent
 
 ## Formulaires
 
-Les formulaires de contact et de reprise ouvrent un email prérempli vers `vkautimomobile@hotmail.com`. Aucun formulaire ne stocke les données sur le site et aucune base de leads n’est connectée. Pour recevoir les demandes en arrière-plan, connecter ensuite un service de formulaire ou un backend avec consentement et politique de confidentialité adaptée.
+Les formulaires de contact et de reprise ouvrent un email prérempli vers `vkautimomobile@hotmail.com`. Aucun formulaire ne stocke les données sur le site et aucune base de leads n’est connectée. La carte Google Maps se charge uniquement après un clic explicite du visiteur. Pour recevoir les demandes en arrière-plan, connecter ensuite un service de formulaire ou un backend avec consentement et politique de confidentialité adaptée.
 
 ## SEO / informations à valider avant lancement
 
