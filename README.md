@@ -39,7 +39,7 @@ Le site propose français, néerlandais et allemand via le sélecteur FR / NL / 
 Le site ne publie que les entrées de `data/vehicles.json` ayant `published: true`, un identifiant, une marque et un modèle. Le fichier est actuellement un tableau vide : **aucun véhicule fictif n’est présenté comme une annonce réelle**.
 
 Pour modifier le stock :
-1. Ouvrir `admin-stock.html` dans le navigateur (après déploiement ou localement).
+1. Ouvrir `admin-stock.html` sur le site déployé ou via un serveur local (un double-clic `file://` peut bloquer le chargement initial du JSON).
 2. Ajouter/modifier les véhicules ou importer le JSON existant.
 3. Exporter `vehicles.json`.
 4. Remplacer `data/vehicles.json` dans GitHub par le fichier exporté.
