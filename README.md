@@ -16,13 +16,15 @@ Site statique responsive pour VK Automobile, Rue Mitoyenne 356, 4710 Lontzen, Be
 - `assets/app.js` — rendu des pages, FR/NL/DE, filtres, formulaires et données SEO
 - `data/vehicles.json` — source structurée du stock
 - `vercel.json` — redirections propres et cache des ressources
+- `scripts/generate-sitemap.cjs` — sitemap multilingue et robots.txt générés au build
+- `package.json` — commande de build sans dépendance
 - `robots.txt` — règles d’indexation
 
 ## Déploiement Vercel
 
 1. Importer ce dépôt GitHub dans Vercel.
 2. Framework Preset : **Other**.
-3. Build Command : laisser vide.
+3. Build Command : `npm run build` (génère automatiquement le sitemap et robots.txt avec le domaine Vercel).
 4. Output Directory : `.`.
 5. Déployer.
 
