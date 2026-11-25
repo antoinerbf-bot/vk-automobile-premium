@@ -9,7 +9,7 @@ return fields.filter(([,val])=>val!==undefined&&val!==null&&val!=='').map(([key,
 }
 function vehiclePage(v){
 const box=$('#vehicle-detail');if(!box)return;
-const imgs=(Array.isArray(v.images)?v.images:[]).filter(x=>typeof x==='string'&&/^https?:\\/\\//i.test(x));
+const imgs=(Array.isArray(v.images)?v.images:[]).filter(x=>typeof x==='string'&&(x.startsWith('https://')||x.startsWith('http://')))
 const title=[v.make,v.model,v.version].filter(Boolean).join(' ');
 const esc=x=>String(x??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const price=v.price==null?(lang==='nl'?'Prijs op aanvraag':lang==='de'?'Preis auf Anfrage':'Prix sur demande'):new Intl.NumberFormat(lang==='de'?'de-BE':lang==='nl'?'nl-BE':'fr-BE',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(v.price);
