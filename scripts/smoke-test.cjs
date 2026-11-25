@@ -3,7 +3,7 @@ const path = require('node:path');
 
 const root = process.cwd();
 const required = [
-  'index.html', 'stock.html', 'vehicle.html', 'reprise.html',
+  'index.html', 'stock.html', 'vehicle.html', 'blog.html', 'article.html', 'reprise.html',
   'services.html', 'contact.html', 'mentions-legales.html',
   'assets/app.js', 'assets/admin.js', 'assets/site.css',
   'data/vehicles.json', 'vercel.json'
@@ -62,7 +62,7 @@ if (!errors.length) {
 
   try {
     const config = JSON.parse(read('vercel.json'));
-    if (config.outputDirectory !== '.') errors.push('vercel.json outputDirectory must be "." for this static site.');
+    if (config.outputDirectory !== '.') errors.push('vercel.json outputDirectory must be "." for this static site.');\n    if (!Array.isArray(config.rewrites) || !config.rewrites.some(rule => rule.source === '/blog/:slug' && rule.destination === '/article.html?slug=:slug')) errors.push('Vercel blog article rewrite is missing.');
   } catch (error) { errors.push('Invalid vercel.json: ' + error.message); }
 
   const pages = {
@@ -72,7 +72,7 @@ if (!errors.length) {
     'reprise.html': 'trade',
     'services.html': 'services',
     'contact.html': 'contact',
-    'mentions-legales.html': 'legal'
+    'mentions-legales.html': 'legal',\n    'blog.html': 'blog',\n    'article.html': 'article'
   };
   for (const [file, page] of Object.entries(pages)) {
     const html = read(file);
