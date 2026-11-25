@@ -74,3 +74,22 @@ Les formulaires de contact et de reprise ouvrent un email prérempli vers `vkaut
 ## Notes
 
 Les photos d’ambiance sont des images externes illustratives. Les textes de services restent généraux et ne promettent pas de garantie, financement ou prestation non confirmés.
+
+
+## Évolutions éditoriales et conversion — 25 novembre 2026
+
+- Blog intégré à l’accueil et au menu, avec trois guides éditoriaux en FR/NL/DE : achat d’occasion, préparation d’une reprise, checklist de visite et d’essai.
+- URLs propres /blog et /blog/<slug>, réécrites vers les templates statiques Vercel.
+- Articles avec données structurées Schema.org Article, page blog CollectionPage/ItemList, hreflang et sitemap multilingue.
+- Barre de conversion persistante sur toutes les pages : appel téléphonique direct et WhatsApp avec message prérempli, adaptée aux écrans mobiles et à la zone de sécurité iOS.
+- Visuels éditoriaux automobiles illustratifs ; ils ne représentent pas des annonces du stock.
+
+## État de la mise en ligne
+
+Les dernières modifications sont poussées sur la branche GitHub main. La connexion Vercel n’est pas accessible depuis l’intégration actuelle : aucun projet VK Automobile n’est visible dans l’espace Vercel connecté et les tentatives de création/déploiement ont été refusées par Vercel avec une erreur 403 (permission de déploiement production). La mise en ligne automatique n’est donc pas confirmée.
+
+Pour une publication durable et automatique, le dépôt doit être relié dans Vercel à un projet autorisé, avec la branche main comme branche de production. Cette intégration Git déclenchera les déploiements à chaque push, sans demander une autorisation temporaire pour chaque changement. Les domaines personnalisés doivent être associés au projet Vercel réellement utilisé.
+
+## Contenu du stock
+
+Le site officiel VK Automobile affiche son inventaire actuel à l’adresse https://vkautomobile.com/vehicles. Le fichier data/vehicles.json du présent projet reste vide tant que les annonces, les prix, les disponibilités et les photos exactes ne sont pas importés/confirmés. Le bouton de stock renvoie vers l’inventaire officiel afin d’éviter de présenter des véhicules vendus ou des photos génériques comme des annonces réelles.
