@@ -5,7 +5,7 @@ const root = process.cwd();
 const required = [
   'index.html', 'stock.html', 'vehicle.html', 'blog.html', 'article.html', 'reprise.html',
   'services.html', 'contact.html', 'mentions-legales.html',
-  'assets/app.js', 'assets/admin.js', 'assets/site.css',
+  'assets/app.js', 'assets/admin.js', 'assets/site.css', 'assets/premium.js', 'assets/premium.css', 'admin-stock.html',
   'data/vehicles.json', 'vercel.json'
 ];
 
@@ -19,7 +19,7 @@ function read(file) {
 }
 
 if (!errors.length) {
-  for (const file of ['assets/app.js', 'assets/admin.js']) {
+  for (const file of ['assets/app.js', 'assets/admin.js', 'assets/premium.js']) {
     try { new Function(read(file)); }
     catch (error) { errors.push('JavaScript syntax error in ' + file + ': ' + error.message); }
   }
@@ -82,6 +82,8 @@ if (!errors.length) {
     if (!html.includes('data-page="' + page + '"')) errors.push(file + ' has an incorrect data-page route.');
     if (!html.includes('assets/app.js')) errors.push(file + ' does not load assets/app.js.');
     if (!html.includes('assets/site.css')) errors.push(file + ' does not load assets/site.css.');
+    if (!html.includes('assets/premium.css')) errors.push(file + ' does not load assets/premium.css.');
+    if (!html.includes('assets/premium.js')) errors.push(file + ' does not load assets/premium.js.');
   }
 }
 
