@@ -12,27 +12,13 @@
     "price": 11400,
     "images": [],
     "published": true,
-    "description": "C4 Picasso 1.6 diesel 85 kW, boîte automatique, 139 000 km, année 2018, norme Euro 6B. L’annonce VK Automobile mentionne deux clés, carnet d’entretien, contrôle technique, demande d’immatriculation et Car-Pass. Garantie 12 mois annoncée. Prix particulier affiché : 11 400 €. Visible sur rendez-vous.",
+    "description": "CITROËN C4 PICASSO 1.6 HDI 85 kW, diesel, boîte automatique, année 2018, 139 000 km, couleur bordeaux, Euro 6B. L’annonce VK mentionne deux clés, carnet d’entretien, contrôle technique, demande d’immatriculation, Car-Pass et garantie 12 mois. Prix affiché dans le stock : 11 400 €. Visite sur rendez-vous.",
     "reference": "VK-CITROEN-C4-PICASSO-2018",
     "sourceUrl": "https://vkautomobile.com/vehicles/cmn81e5yi003evsu9hshr7xes",
     "engine": "1.6 diesel",
     "power": "85 kW",
     "color": "Bordeaux",
-    "doors": 5,
-    "seats": 5,
-    "emissions": "Euro 6B",
-    "equipment": [
-      "ABS",
-      "Bluetooth",
-      "Caméra de recul",
-      "Climatisation automatique",
-      "GPS",
-      "Jantes alliage",
-      "Radar de stationnement",
-      "Régulateur de vitesse",
-      "Vitres électriques",
-      "Volant multifonctions"
-    ]
+    "emissions": "Euro 6B"
   },
   {
     "id": "cmn80sut8000tvsu9zki4n9yd",
@@ -40,7 +26,7 @@
     "model": "116 i",
     "version": "Essence 80 kW",
     "year": 2016,
-    "mileage": 131000,
+    "mileage": 130000,
     "fuel": "Essence",
     "transmission": "Manuelle",
     "body": "Berline compacte",
@@ -49,15 +35,13 @@
       "https://vkautomobile.com/_next/image?q=75&url=https%3A%2F%2Fs3.dayz-code.com%2Fvk-vehicles%2Fimages%2Fvehicle-temp-1774562605788.jpeg&w=3840"
     ],
     "published": true,
-    "description": "BMW 116 i essence 80 kW, boîte manuelle, année 2016, Euro 6B. Le texte d’annonce mentionne carnet d’entretien, contrôle technique, demande d’immatriculation, Car-Pass, deux clés et garantie 12 mois. Prix particulier affiché : 10 500 €. Kilométrage annoncé : 131 000 km.",
+    "description": "BMW 116 i, essence 80 kW, boîte manuelle, année 2016, kilométrage affiché dans le stock : 130 000 km (le texte de l’annonce indique 131 000 km), couleur blanche, Euro 6B. L’annonce mentionne deux clés, carnet d’entretien, contrôle technique, demande d’immatriculation, Car-Pass et garantie 12 mois. Prix affiché : 10 500 €.",
     "reference": "VK-BMW-116I-2016",
     "sourceUrl": "https://vkautomobile.com/vehicles/cmn80sut8000tvsu9zki4n9yd",
     "engine": "Essence 80 kW",
     "power": "80 kW",
     "color": "Blanc",
-    "emissions": "Euro 6B",
-    "doors": 5,
-    "seats": 5
+    "emissions": "Euro 6B"
   },
   {
     "id": "vk-vw-tiguan-2016-127000",
@@ -72,15 +56,13 @@
     "price": 11500,
     "images": [],
     "published": true,
-    "description": "Volkswagen Tiguan 1.4 essence 92 kW, boîte manuelle, année 2016, Euro 6B, 127 000 km. Couleur grise. L’annonce VK Automobile mentionne deux clés, carnet d’entretien, contrôle technique, demande d’immatriculation et Car-Pass. La liste de stock affiche 11 500 € ; le texte de l’annonce mentionne également 11 900 € comme prix particulier. Prix et disponibilité à confirmer auprès du vendeur. Garantie 12 mois annoncée.",
+    "description": "VOLKSWAGEN TIGUAN 1.4 essence 92 kW, boîte manuelle, année 2016, 127 000 km, couleur grise, Euro 6B. Le stock affiche 11 500 € ; le texte de l’annonce mentionne aussi 11 900 € prix particulier. À confirmer avec le vendeur. L’annonce mentionne deux clés, carnet d’entretien, contrôle technique, demande d’immatriculation, Car-Pass et garantie 12 mois.",
     "reference": "VK-VW-TIGUAN-2016",
     "sourceUrl": "https://vkautomobile.com/vehicles",
     "engine": "1.4 essence",
     "power": "92 kW",
     "color": "Gris",
-    "emissions": "Euro 6B",
-    "doors": 5,
-    "seats": 5
+    "emissions": "Euro 6B"
   },
   {
     "id": "vk-peugeot-207cc-2011-165000",
@@ -95,14 +77,12 @@
     "price": 4200,
     "images": [],
     "published": true,
-    "description": "Peugeot 207 CC cabriolet 1.6 essence 88 kW, boîte manuelle, année 2011, Euro 5, 165 000 km. Couleur noire. L’annonce VK Automobile mentionne deux clés, carnet d’entretien, contrôle technique, demande d’immatriculation, Car-Pass et garantie 12 mois. La liste affiche 4 200 € ; le texte de l’annonce mentionne également 4 700 €. Prix et disponibilité à confirmer auprès du vendeur.",
+    "description": "PEUGEOT 207 CC cabriolet 1.6 essence 88 kW, boîte manuelle, année 2011, 165 000 km, couleur noire, Euro 5. Le stock affiche 4 200 € ; le texte de l’annonce mentionne aussi 4 700 € prix particulier. À confirmer avec le vendeur. L’annonce mentionne deux clés, carnet d’entretien, contrôle technique, demande d’immatriculation, Car-Pass et garantie 12 mois.",
     "reference": "VK-PEUGEOT-207CC-2011",
     "sourceUrl": "https://vkautomobile.com/vehicles",
     "engine": "1.6 essence",
     "power": "88 kW",
     "color": "Noir",
-    "emissions": "Euro 5",
-    "doors": 2,
-    "seats": 4
+    "emissions": "Euro 5"
   }
 ]
