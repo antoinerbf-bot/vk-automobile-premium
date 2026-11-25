@@ -39,7 +39,7 @@ Le site propose français, néerlandais et allemand via le sélecteur FR / NL / 
 
 Le site ne publie que les entrées de `data/vehicles.json` ayant `published: true`, un identifiant, une marque et un modèle. Le fichier est actuellement un tableau vide : **aucun véhicule fictif n’est présenté comme une annonce réelle**.
 
-Quand le stock local est vide, l’accueil et la page Stock proposent un accès direct aux annonces VK Automobile actuellement publiées sur [AutoScout24](https://www.autoscout24.be/fr/professional/vk-automobile-lontzen). Le site ne copie pas automatiquement ces annonces dans son propre stock : les véhicules, photos, prix et disponibilités doivent être importés/validés par le propriétaire avant d’être publiés ici.
+Quand le stock local est vide, l’accueil et la page Stock proposent un accès direct au stock actuellement publié sur le [site officiel VK Automobile](https://vkautomobile.com/vehicles). Le stock officiel consulté affiche des annonces actives ; le site de ce dépôt ne les copie pas automatiquement. Le site ne copie pas automatiquement ces annonces dans son propre stock : les véhicules, photos, prix et disponibilités doivent être importés/validés par le propriétaire avant d’être publiés ici.
 
 Pour modifier le stock :
 1. Ouvrir `admin-stock.html` sur le site déployé ou via un serveur local (un double-clic `file://` peut bloquer le chargement initial du JSON).
